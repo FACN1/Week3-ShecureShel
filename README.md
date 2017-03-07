@@ -7,33 +7,38 @@ ShecureShel plan to create a Recipe Puppy (RP) API app, taking user input which 
 
 The initial index.html file will contain:
 + An input field and a search button
-  - which will be used to search food within the RP API.
+  + which will be used to search food within the RP API.
 
-+ An unordered list ``` <ul> ``` element, which is intended to host the search results coming back from the RP API
++ An unordered list ``` <ul> ``` element,
+  + which is intended to host the search results coming back from the RP API
 
 ## File Structure Planning
-index.html
-  head links:
-    ./style/styles.css
+#### index.html
+##### head links:    
+style/styles.css
 
-  script links
-    ./javascript/request.js     <- handling user reuqests, and send to API
-    ./javascript/render.js      <- render API responseText and return to DOM
 
-    (stretch goal)
-    ./javascript/main.js        <- if possible, centralise request & render calls
+##### script links
 
-tests.html
-  head links:
-    ./style/styles.css
-    /qunit css API (link)
+  - ./javascript/request.js (file)     <- handling user reuqests, and send to API
+  - ./javascript/render.js (file)     <- render API responseText and return to DOM
 
-  script links
-    ./javascript/request.js     <- handling user reuqests, and send to API
-    ./javascript/render.js      <- render API responseText and return to DOM
-    /qunitAPI.js (link)
-    ./tests/tests.js
-    ./tests/mockarguments.js
+  - ./javascript/main.js (file) (stretch goal)       <- if possible, centralise request & render calls
 
-    (stretch goal)
-    ./javascript/main.js        <- if possible, centralise request & render calls  
+#### tests.html
+
+#####  head links:
+
+  + ./style/styles.css (file)
+
+  + /qunit css API (link)
+
+##### script links
+  - ./javascript/request.js (file)     <- handling user reuqests, and send to API
+  - ./javascript/render.js (file)      <- render API responseText and return to DOM
+  - /qunitAPI.js (link)
+  - ./tests/tests.js (file)
+  - ./tests/mockarguments.js (file)
+
+
+  - ./javascript/main.js (stretch goal)      <- if possible, centralise request & render calls  
