@@ -20,10 +20,11 @@ style/styles.css
 
 ##### script links
 
-  - ./javascript/request.js (file)     <- handling user reuqests, and send to API
+  - ./javascript/input.js (file)      <- handling user inputs
+  - ./javascript/request.js (file)     <- sending user requests to API
   - ./javascript/render.js (file)     <- render API responseText and return to DOM
 
-  - ./javascript/main.js (file) (stretch goal)       <- if possible, centralise request & render calls
+  - ./javascript/main.js (file) (stretch goal)       <- if possible, centralize request & render calls
 
 #### tests.html
 
