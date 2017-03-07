@@ -44,3 +44,10 @@ style/styles.css
 
 
   - ./javascript/main.js (stretch goal)      <- if possible, centralise request & render calls  
+
+
+### Process
+Testing files are linked:
+Initiated startup files (listed above)
++ tested that style/style.css is linked (background: black)
++ tested javascript files are linked (console logging javascript file names)
