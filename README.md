@@ -35,6 +35,7 @@ style/styles.css
   + /qunit css API (link)
 
 ##### script links
+  - ./javascript/input.js (file)       <- handling user inputs
   - ./javascript/request.js (file)     <- handling user reuqests, and send to API
   - ./javascript/render.js (file)      <- render API responseText and return to DOM
   - /qunitAPI.js (link)
