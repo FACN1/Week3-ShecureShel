@@ -1,6 +1,6 @@
 // console.log("render linked");
-function renderSearch (recipeObject)
-{
+function renderSearch (recipeObject) {
+  // console.log("rpo",recipeObject);
   var recipeArray=recipeObject.results;
   //console.log("rpo", recipeObject.results);
   var spanTitle = document.createElement('span');
