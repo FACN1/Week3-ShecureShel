@@ -1,11 +1,12 @@
-.titleIngredientsCss {
+/*.titleIngredientsCss {
   color: black;
   font-size: 30px;
   text-align: left;
-}
+}*/
 
-.titleRecipes {
-  color: black;
-  font-size: 30px;
+.spanTitleCSS{
+  font-size: : 200px;
   text-align: left;
+  font-weight: bold;
+
 }
