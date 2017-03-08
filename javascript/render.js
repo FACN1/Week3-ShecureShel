@@ -1,6 +1,6 @@
 // console.log("render linked");
-function renderSearch (recipeObject)
-{
+function renderSearch (recipeObject) {
+  // console.log("rpo",recipeObject);
   var recipeArray=recipeObject.results;
   var titleList =document.getElementById("results-list")
   recipeArray.forEach(function (element)
