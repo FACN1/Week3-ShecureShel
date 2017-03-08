@@ -1,17 +1,16 @@
 /* render ingredients input */
 
-var searchForm = document.getElementById('user-search');
 
-searchForm.addEventListener('submit', function(event){
-  event.preventDefault();
-  var ingredientsInput = event.target.childNodes[1].value.slice();
+function extractQuery(eventNode){
+  var ingredientsInput = eventNode.target.childNodes[1].value.slice();
   if (ingredientsInput === "") {
     alert("Write an ingredient to find a recipe");
     return;
   }
+  return ingredientsInput;
+}
 
-  formatInput(ingredientsInput);
-});
+
 
 function formatInput(input){
   var inputText = input.slice();
@@ -21,7 +20,8 @@ function formatInput(input){
   inputText = inputText.trim().toLowerCase();
   inputText = inputText.replace(/\s/g, ',');
   var ingredientsSearch = prefix+inputText;
-  makeRequest(ingredientsSearch);
+  return ingredientsSearch;
+  // console.log(ingredientsSearch);
 
 }
 
