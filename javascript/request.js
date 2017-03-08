@@ -4,9 +4,7 @@ function makeRequest(searchWord, callback){
   var url = base+searchWord;
   xhr.onreadystatechange = function (){
     if(xhr.readyState == 4 && xhr.status == 200){
-      // console.log("request being made");
       var recipePuppyObj = JSON.parse(xhr.responseText);
-      // console.log("response",recipePuppyObj);
       callback(recipePuppyObj);
     }
   };
