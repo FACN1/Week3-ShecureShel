@@ -8,8 +8,9 @@ function makeRequest(searchWord){
   xhr.onreadystatechange = function (){
     if(xhr.readyState == 4 && xhr.status == 200){
       var recipePuppyObj = JSON.parse(xhr.responseText);
-      console.log(recipePuppyObj);
-      return recipePuppyObj;
+      // console.log(recipePuppyObj);
+      // return recipePuppyObj;
+      renderSearch(recipePuppyObj);
     }
   };
 xhr.open("GET", url);
