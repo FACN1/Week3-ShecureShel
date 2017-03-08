@@ -1,14 +1,18 @@
 // console.log("render linked");
 function renderSearch (recipeObject) {
-  // console.log("rpo",recipeObject);
+
   var recipeArray=recipeObject.results;
-  //console.log("rpo", recipeObject.results);
+
+
+
+
+  var titleList =document.getElementById("results-list");
+  titleList.innerHTML="";
   var spanTitle = document.createElement('span');
-  var titleRecipes.textContent=("Recipes");
-  spanTitle.appendChild(titleRecipes);
+  spanTitle.textContent="Recipes";
+  spanTitle.className="spanTitleCSS";
+  titleList.appendChild(spanTitle);
 
-
-  var titleList =document.getElementById("results-list")
   recipeArray.forEach(function (element)
   {
 
@@ -17,6 +21,7 @@ function renderSearch (recipeObject) {
 
       var title= element.title;
       itemNode.href= element.href;
+      itemNode.target="_blank";
       itemNode.textContent=title;
 
       titleList.appendChild(listNode);
