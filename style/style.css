@@ -52,6 +52,7 @@ table {
 }
 
  header{
+  color: white;
   margin: 2rem;
   text-align: center;
   font-size: 90px;
@@ -60,6 +61,7 @@ table {
 }
 
 .search-wrapper {
+  color: white;
   text-align: center;
   height: 100%;
 }
@@ -73,5 +75,5 @@ form{
 }
 
 .results-list{
-  background: rgba(255,255,255,0.7);  
+  background: rgba(255,255,255,0.7);
 }
