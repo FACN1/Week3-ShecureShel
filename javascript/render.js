@@ -1,10 +1,6 @@
 function renderSearch (recipeObject) {
 
   var recipeArray=recipeObject.results;
-
-
-
-
   var titleList =document.getElementById("results-list");
   titleList.innerHTML="";
   var headerTitle = document.createElement('header');
