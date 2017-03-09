@@ -1,4 +1,3 @@
-// console.log("render linked");
 function renderSearch (recipeObject) {
 
   var recipeArray=recipeObject.results;
@@ -13,8 +12,7 @@ function renderSearch (recipeObject) {
   spanTitle.className="spanTitleCSS";
   titleList.appendChild(spanTitle);
 
-  recipeArray.forEach(function (element)
-  {
+  recipeArray.forEach(function (element){
 
       var listNode = document.createElement('li');
       var itemNode = document.createElement('a');
@@ -38,8 +36,7 @@ function renderSearch (recipeObject) {
 
   });
 
-  return
-   {
+  return{
     recipeArray:recipeArray
    }
 
