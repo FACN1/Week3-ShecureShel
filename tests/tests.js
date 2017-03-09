@@ -17,9 +17,12 @@ QUnit.test("Test DOM and respnseText return same recipe", function( assert ) {
 QUnit.test("Render function renders ALL results", function( assert ) {
   renderSearch(mockArguments.mockResponse);
   var responseLength = mockArguments.mockResponse.results.length;
-  var renderedLength =
-  document.getElementById('results-list').childNodes;
-  assert.deepEqual(renderedLength.length-1, responseLength, "DOM and respnseText return the same recipe");
+  var childNodes = document.getElementById('results-list').childNodes;
+
+
+  var expected = responseLength * 2;
+  var actual = childNodes.length-1
+  assert.equal(actual, expected, "the number of li elements is double the number of recipes");
 
 });
 
