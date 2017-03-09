@@ -1,8 +1,8 @@
 
 var searchForm = document.getElementById('user-search');
-searchForm.addEventListener('submit', clickHandler);
+searchForm.addEventListener('submit', sumbitHandler);
 
-function clickHandler(event){
+function sumbitHandler(event){
   event.preventDefault();
   makeRequest(formatInput(extractQuery(event)), renderSearch);
 
