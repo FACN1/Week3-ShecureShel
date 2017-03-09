@@ -4,3 +4,15 @@
   font-weight: bold;
 
 }
+
+ header{
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+form{
+  margin: auto;
+  max-width: 150px;
+}
