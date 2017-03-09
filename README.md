@@ -1,5 +1,5 @@
 # Week3-ShecureShel
-Recipe Puppy API exercise
+[Recipe Puppy API exercise](https://facn1.github.io/Week3-ShecureShel/)
 
 
 ### Important !
