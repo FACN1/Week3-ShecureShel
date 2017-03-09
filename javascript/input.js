@@ -2,7 +2,7 @@
 
 
 function extractQuery(eventNode){
-  var ingredientsInput = eventNode.target.childNodes[1].value.slice();
+  var ingredientsInput = eventNode.target.childNodes[1].value;
   if (ingredientsInput === "") {
     alert("Write an ingredient to find a recipe");
     return;
