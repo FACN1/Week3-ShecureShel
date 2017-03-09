@@ -14,11 +14,10 @@ function extractQuery(eventNode){
 
 function formatInput(input){
   var inputText = input.slice();
-
   var prefix = "i="; // this should be its own function.
-
   inputText = inputText.trim().toLowerCase();
   inputText = inputText.replace(/\s/g, ',');
+  inputText = inputText.replace(/[^a-z0-9+]+/gi, '')
   var ingredientsSearch = prefix+inputText;
   return ingredientsSearch;
 }
