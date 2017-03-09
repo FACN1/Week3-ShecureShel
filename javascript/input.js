@@ -21,8 +21,6 @@ function formatInput(input){
   inputText = inputText.replace(/\s/g, ',');
   var ingredientsSearch = prefix+inputText;
   return ingredientsSearch;
-  // console.log(ingredientsSearch);
-
 }
 
 /* end render ingredients input */
