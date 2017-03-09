@@ -19,7 +19,6 @@ QUnit.test("Render function renders ALL results", function( assert ) {
   var responseLength = mockArguments.mockResponse.results.length;
   var childNodes = document.getElementById('results-list').childNodes;
 
-
   var expected = responseLength * 2;
   var actual = childNodes.length-1
   assert.equal(actual, expected, "the number of li elements is double the number of recipes");
