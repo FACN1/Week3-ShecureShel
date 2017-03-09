@@ -8,7 +8,7 @@ function renderSearch (recipeObject) {
 
   var titleList =document.getElementById("results-list");
   titleList.innerHTML="";
-  var headerTitle = document.createElement('h1');
+  var headerTitle = document.createElement('header');
   headerTitle.textContent="Recipes";
   headerTitle.className="headerTitleCSS";
   titleList.appendChild(headerTitle);
