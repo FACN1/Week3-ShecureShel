@@ -7,10 +7,10 @@ function renderSearch (recipeObject) {
 
   var titleList =document.getElementById("results-list");
   titleList.innerHTML="";
-  var spanTitle = document.createElement('span');
-  spanTitle.textContent="Recipes";
-  spanTitle.className="spanTitleCSS";
-  titleList.appendChild(spanTitle);
+  var headerTitle = document.createElement('header');
+  headerTitle.textContent="Recipes";
+  headerTitle.className="headerTitleCSS";
+  titleList.appendChild(headerTitle);
 
   recipeArray.forEach(function (element){
 
