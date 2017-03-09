@@ -3,7 +3,7 @@ Recipe Puppy API exercise
 
 
 ### Important !
-In order to view out project in the CHROME browser, you will need to download the "allow-control-allow-origin" extension.
+In order to view our project in the CHROME browser, you will need to download the "allow-control-allow-origin" extension.
 ## Intro
 ShecureShel plan to create a Recipe Puppy (RP) API app, taking user input which triggers API enquiries using the RP API engine, returning recipe suggestions based on ingredients searched by the user.
 
@@ -38,7 +38,7 @@ style/styles.css
 
 ##### script links
   - ./javascript/input.js (file)       <- handling user inputs
-  - ./javascript/request.js (file)     <- handling user reuqests, and send to API
+  - ./javascript/request.js (file)     <- handling user requests, and send to API
   - ./javascript/render.js (file)      <- render API responseText and return to DOM
   - /qunitAPI.js (link)
   - ./tests/tests.js (file)
