@@ -1,9 +1,10 @@
+var Main = (function(){
 
-var searchForm = document.getElementById('user-search');
-searchForm.addEventListener('submit', sumbitHandler);
+  var searchForm = document.getElementById('user-search');
+  searchForm.addEventListener('submit', clickHandler);
 
-function sumbitHandler(event){
-  event.preventDefault();
-  makeRequest(formatInput(extractQuery(event)), renderSearch);
-
-}
+  function clickHandler(event){
+    event.preventDefault();
+    makeRequest(Input.formatInput(Input.extractQuery(event)), renderSearch);
+  }
+})();
