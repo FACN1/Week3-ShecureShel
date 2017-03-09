@@ -8,6 +8,6 @@ function makeRequest(searchWord, callback){
       callback(recipePuppyObj);
     }
   };
-xhr.open("GET", url);
-xhr.send();
+  xhr.open("GET", url);
+  xhr.send();
 };

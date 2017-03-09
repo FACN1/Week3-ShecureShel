@@ -2,10 +2,6 @@
 function renderSearch (recipeObject) {
 
   var recipeArray=recipeObject.results;
-
-
-
-
   var titleList =document.getElementById("results-list");
   titleList.innerHTML="";
   var headerTitle = document.createElement('header');
@@ -13,8 +9,7 @@ function renderSearch (recipeObject) {
   headerTitle.className="headerTitleCSS";
   titleList.appendChild(headerTitle);
 
-  recipeArray.forEach(function (element)
-  {
+  recipeArray.forEach(function (element){
 
       var listNode = document.createElement('li');
       var itemNode = document.createElement('a');
